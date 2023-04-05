@@ -30,3 +30,17 @@ f.add(center);
 JLabel date = new JLabel("Date and time",JLabel.CENTER); 
 JLabel date = new JLabel("Timer");    
 //    DEFAULT VALUE of their allignment is 'Left'
+  
+  
+  
+// Font style
+Font font1 = new Font(Font.SERIF, Font.BOLD, 48); // type ,  style , size
+Font font2 = new Font(Font.SANS_SERIF, 3 ,36 );   // number constants can be used for font style (here -->3 = BOLD + ITALIC)
+// default font is passed in case an invalid font type is passed
+// all three paramerters are necessary to be passed to Font() and in same order (string, int , int)
+
+date.setFont(font2);  // to apply font --> .setFont() is used
+date.setFont(font1);
+
+  
+  
