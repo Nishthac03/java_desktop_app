@@ -11,3 +11,13 @@ Jpanel centre = new JPanel();
 //Panel to hold 9 button at centre of frame
 JPanel centre = new JPanel();
 centre.setLayout(new GridLayout(3,3));
+
+  
+for(int i=0; i<9; i++){
+        JButton b= new JButton();
+        centre.add(b);
+
+        b.addActionListner();  // whenever button is clicked , listner is registered with it
+    }
+
+f.add(center); 
