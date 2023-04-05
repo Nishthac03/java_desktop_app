@@ -62,3 +62,35 @@ f.add(date, BorderLayout,SOUTH);
   
   LocalDate dt = LocalDate.now();   // to take local time of machine
 LocalTime lt = LocalTime.now();   
+
+  date.setText(dt + "\t" + lt);  // set method will set the date and tie to the label
+
+
+timer.setText(""+h + " : " + m + " : " + s); 
+  
+
+Thread timer_thread = new Thread(
+  /*Lambda to implement run() */
+() -> {
+         while true()
+         {
+              s ++;
+
+              if ( s == 60){
+                m++;
+                s=0;  
+              }
+              if ( m == 60 ){
+                h++;
+                m=0;
+              }
+try{
+        Thread.sleep(1000); // takes time in milli second
+        // sleep method is static method
+        // sleep method throws Interrupted exception 
+}
+catch (InterrupterException e){}
+
+         }
+      }
+);
