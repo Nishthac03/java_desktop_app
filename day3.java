@@ -13,6 +13,7 @@ JPanel centre = new JPanel();
 centre.setLayout(new GridLayout(3,3));
 
   
+  
 for(int i=0; i<9; i++){
         JButton b= new JButton();
         centre.add(b);
@@ -21,3 +22,11 @@ for(int i=0; i<9; i++){
     }
 
 f.add(center); 
+  
+  
+  
+  /* 'Timer' on the top and name of player OR ' Date and Time at the bottom ' are labels*/ 
+
+JLabel date = new JLabel("Date and time",JLabel.CENTER); 
+JLabel date = new JLabel("Timer");    
+//    DEFAULT VALUE of their allignment is 'Left'
