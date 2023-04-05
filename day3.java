@@ -58,3 +58,7 @@ date.setFont(font1);
 
 f.add(timer, BorderLayout.NORTH);     /*  to display timer at the top  -->  BorderLayout.NORTH  */
 f.add(date, BorderLayout,SOUTH);
+
+  
+  LocalDate dt = LocalDate.now();   // to take local time of machine
+LocalTime lt = LocalTime.now();   
