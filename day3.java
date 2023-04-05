@@ -42,5 +42,13 @@ Font font2 = new Font(Font.SANS_SERIF, 3 ,36 );   // number constants can be use
 date.setFont(font2);  // to apply font --> .setFont() is used
 date.setFont(font1);
 
-  
+  /* Font is a helper class 
+Font(String name , int style, int size)
+
+there are constants defined for font style
+0 --> FONT.PLAN
+1 --> FONT.BOLD
+2 --> FONT.ITALIC
+3 --> BOLD + ITALIC
+  */
   
