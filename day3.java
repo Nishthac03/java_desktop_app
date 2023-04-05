@@ -52,3 +52,9 @@ there are constants defined for font style
 3 --> BOLD + ITALIC
   */
   
+
+date.setFont(font2);  // to apply font --> .setFont() is used
+date.setFont(font1);
+
+f.add(timer, BorderLayout.NORTH);     /*  to display timer at the top  -->  BorderLayout.NORTH  */
+f.add(date, BorderLayout,SOUTH);
