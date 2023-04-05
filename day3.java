@@ -94,3 +94,13 @@ catch (InterrupterException e){}
          }
       }
 );
+
+  
+  //properties of frame
+f.setSize(600,600);
+f.setLocationRelativeTo(null);
+f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+f.setVsible(true);
+
+}
+}
