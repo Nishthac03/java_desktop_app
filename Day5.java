@@ -38,6 +38,32 @@ class UnitConvertor
     jc1.setBounds(350,200,80,50);
     
     
+    class MyListener implements ItemListener
+    {
+      public void itemStateChanged(ItemEvent e)
+      {
+        double input = Doubel.parseDoublet1.getText();
+        String imput_type = (String)jc1.getSelectedItem(); //can also use e.getItem(); not used here because we have two combo boxes
+        String output_type = (String)jc2.getSelectedItem();
+        double result= input;
+        
+        if(input_type.equals("Celsius"))
+        {
+          if(output_type.equals("Farenheit"))
+          {
+            double result=(input*9/5)+32;
+          }
+          else if (output_type.equals(Kelvin))
+          {
+            result=273.15+input;
+          }
+        }
+        t2.setText(""+result);
+      }
+    }
+    MyListener ml = new MyListener();  //registering the items
+    jc1.addItemListener(ml);           //registering the items
+    jc2.addItemListener(ml);
     jf.setVisible(true);
   }
 }
