@@ -16,6 +16,7 @@ class UnitConvertor
     
     JPanel p =new JPanel(); //to add 4 different components in centre
     jf.add(p);
+    p.setLayout(null);  //so as to use setBounds..if not null then we can't have exact result of setBounds
     
     String[] temp={"Celcius","Farenheit","Kelvin"};
     JTextFeld t1 = new JTextFeild(10);
@@ -23,8 +24,20 @@ class UnitConvertor
     
     
     JTextFeld t2 = new JTextFeild(10);
+    j2.setEditable(false);  //for text feild or area
     JComboBox <String> jc2= new JComboBox<>(temp);
     
-    jf.setVisible(True);
+    p.add(t1);
+    t1.setBounds(100,100,200,50);
+    p.add(jc1);
+    jc1.setBounds(350,100,80,50);
+    
+    p.add(t2);
+    t1.setBounds(100,200,200,50);
+    p.add(jc2);
+    jc1.setBounds(350,200,80,50);
+    
+    
+    jf.setVisible(true);
   }
 }
