@@ -8,9 +8,9 @@ class UnitConvertor
     JFrame jf= new JFrame();
     jf.setSize(600,400);
     jf.setLocationRelativeTo(null);
-    jf.setDefaultCloseOPeration(JFrame.EXIT_ON_CLOSE);
+    jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     String[] arr={"Temperature","Wight","Length","Currency"};
-    JComboBox<String> jcb= newJComboBox<>(arr);    //<>...is type inference diamond..referring from left side angular bracket
+    JComboBox<String> jcb= new JComboBox<>(arr);    //<>...is type inference diamond..referring from left side angular bracket
     jcb.addItem("Time");  //inserting at particular index...jcb.insertItemAt("Time",1);
     jf.add(jcb,BorderLayout.NORTH);
     
