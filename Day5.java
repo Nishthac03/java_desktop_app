@@ -19,12 +19,12 @@ class UnitConvertor
     p.setLayout(null);  //so as to use setBounds..if not null then we can't have exact result of setBounds
     
     String[] temp={"Celcius","Farenheit","Kelvin"};
-    JTextFeld t1 = new JTextFeild(10);
+    JTextField t1 = new JTextField(10);
     JComboBox <String> jc1= new JComboBox<>(temp);
     
     
-    JTextFeld t2 = new JTextFeild(10);
-    j2.setEditable(false);  //for text feild or area
+    JTextField t2 = new JTextField(10);
+    t2.setEditable(false);  //for text feild or area
     JComboBox <String> jc2= new JComboBox<>(temp);
     
     p.add(t1);
@@ -43,7 +43,7 @@ class UnitConvertor
       public void itemStateChanged(ItemEvent e)
       {
         double input = Doubel.parseDoublet1.getText();
-        String imput_type = (String)jc1.getSelectedItem(); //can also use e.getItem(); not used here because we have two combo boxes
+        String input_type = (String)jc1.getSelectedItem(); //can also use e.getItem(); not used here because we have two combo boxes
         String output_type = (String)jc2.getSelectedItem();
         double result= input;
         
@@ -51,9 +51,9 @@ class UnitConvertor
         {
           if(output_type.equals("Farenheit"))
           {
-            double result=(input*9/5)+32;
+            result=(input*9/5)+32;
           }
-          else if (output_type.equals(Kelvin))
+          else if (output_type.equals("Kelvin"))
           {
             result=273.15+input;
           }
